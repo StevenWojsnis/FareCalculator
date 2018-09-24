@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guggenheim", "Guggenheim\Guggenheim.csproj", "{017C19D3-4773-4225-9BD2-1FB659AE9065}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FareCalculator", "Guggenheim\FareCalculator.csproj", "{017C19D3-4773-4225-9BD2-1FB659AE9065}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuggenheimTests", "GuggenheimTests\GuggenheimTests.csproj", "{9FA49058-AE11-4350-917C-0CFB358C31A6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FareCalculatorTests", "GuggenheimTests\FareCalculatorTests.csproj", "{9FA49058-AE11-4350-917C-0CFB358C31A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

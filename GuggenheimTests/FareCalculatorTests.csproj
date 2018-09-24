@@ -79,9 +79,9 @@
       <Project>{4D896ADC-72DA-41C1-9041-18B9C4F7BF7C}</Project>
       <Name>GuggenheimProject</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Guggenheim\Guggenheim.csproj">
+    <ProjectReference Include="..\Guggenheim\FareCalculator.csproj">
       <Project>{017C19D3-4773-4225-9BD2-1FB659AE9065}</Project>
-      <Name>Guggenheim</Name>
+      <Name>FareCalculator</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
