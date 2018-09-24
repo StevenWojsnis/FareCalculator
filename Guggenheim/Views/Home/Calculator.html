@@ -1,0 +1,29 @@
+﻿
+<div ng-controller="FareController">
+    <form name="form" ng-submit="calc(data)">
+
+        <label for="timeInput">Pick a time:</label>
+        <input type="time" id="timeInput" name="timeInput" ng-model="data.time"required /><br />
+
+        <label for="dateInput">Pick a date:</label>
+        <input type="date" id="dateInput" name="dateInput" ng-model="data.date" placeholder="MM:dd:YYYY" required /><br />
+
+        <label for= "distance">Distance traveled under 6mph:</label>
+        <input type="number" id="distance" name="distanceInput" ng-model="data.DistanceUnitsBelowSixMph"
+                required ng-pattern="/^[0-9]+(\.[0-9]{1,2})?$/" step="0.2" multiple-of-fifth not-negative />
+
+        <span ng-show="form.distanceInput.$error.multipleOfFifth">This value must be divisble by .2!</span><br />
+        <span ng-show="form.distanceInput.$error.notNegative">This value cannot be negative!</span><br />
+
+
+        <label for="minutes">Minutes traveled over 6mph:</label>
+        <input type="number" id="minutes" name="minutesInput" ng-model="data.MinutesAboveSixMph"required not-negative/>
+        <span ng-show="data.mintutesInput.$error.required"> Time is required.</span> <br />
+        <span ng-show="form.minutesInput.$error.notNegative">This value cannot be negative!</span><br />
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h1>Total: {{totalFare}}</h1>
+
+</div>
